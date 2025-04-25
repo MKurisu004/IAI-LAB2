@@ -1,0 +1,21 @@
+# === Deep Learning Core ===
+torch>=1.12,<3.0
+transformers>=4.28
+datasets>=2.12
+
+# === Data Utilities ===
+numpy
+tqdm
+matplotlib
+gensim
+
+# === Tokenizer Support ===
+sentencepiece       # 部分模型如 T5/BART 需要
+protobuf            # transformers 会用到
+
+# === Optional but Useful ===
+scikit-learn        # 如果用 precision/recall/F1 评估
+pandas              # 若处理csv格式数据
+
+# === For fixed Python compatibility ===
+python_version != "3.12"  # 避免 transformers 和 scipy 出错
